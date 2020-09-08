@@ -81,6 +81,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <segue destination="ZOV-Id-Hyz" kind="presentation" modalTransitionStyle="crossDissolve" id="SvC-GS-EMK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfB-WF-Pjc">
                                 <rect key="frame" x="434" y="364" width="28" height="21"/>
@@ -129,10 +132,74 @@
             </objects>
             <point key="canvasLocation" x="50.223214285714285" y="-111.59420289855073"/>
         </scene>
+        <!--Credit View Controller-->
+        <scene sceneID="Mjh-pd-5xT">
+            <objects>
+                <viewController id="ZOV-Id-Hyz" customClass="CreditViewController" customModule="UpDownGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XS1-ZG-SPl">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="ld9-if-efP">
+                                <rect key="frame" x="64" y="107" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PRn-ZH-De1"/>
+                                    <constraint firstAttribute="height" constant="200" id="aEN-R4-C08"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-6C-CID">
+                                <rect key="frame" x="64" y="20" width="47.5" height="37"/>
+                                <state key="normal" image="xmark.rectangle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpDismissButton:" destination="ZOV-Id-Hyz" eventType="touchUpInside" id="xYW-4f-Txi"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8dC-oW-5jQ">
+                                <rect key="frame" x="284" y="20" width="592" height="353"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Hello world!
+
+Creator : ironelder
+
+E-mail : ironelder@gmail.com
+
+Github : https://github.com/ironelder</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8dC-oW-5jQ" firstAttribute="leading" secondItem="ld9-if-efP" secondAttribute="trailing" constant="20" id="6q1-vE-sSM"/>
+                            <constraint firstItem="ld9-if-efP" firstAttribute="top" secondItem="8gz-6C-CID" secondAttribute="bottom" constant="50" id="8y7-Z1-Pt9"/>
+                            <constraint firstItem="8gz-6C-CID" firstAttribute="top" secondItem="gm4-eh-PVa" secondAttribute="top" constant="20" id="GiZ-hc-Qqg"/>
+                            <constraint firstItem="8dC-oW-5jQ" firstAttribute="top" secondItem="gm4-eh-PVa" secondAttribute="top" constant="20" id="K4n-Cc-2qF"/>
+                            <constraint firstItem="ld9-if-efP" firstAttribute="centerY" secondItem="XS1-ZG-SPl" secondAttribute="centerY" id="ULL-C4-3nN"/>
+                            <constraint firstAttribute="trailing" secondItem="8dC-oW-5jQ" secondAttribute="trailing" constant="20" id="WtL-ma-0cv"/>
+                            <constraint firstItem="8gz-6C-CID" firstAttribute="leading" secondItem="gm4-eh-PVa" secondAttribute="leading" constant="20" id="an9-SS-pn2"/>
+                            <constraint firstItem="ld9-if-efP" firstAttribute="leading" secondItem="8gz-6C-CID" secondAttribute="leading" id="dQ3-td-JNc"/>
+                            <constraint firstItem="ld9-if-efP" firstAttribute="leading" secondItem="gm4-eh-PVa" secondAttribute="leading" constant="20" id="ftY-D9-pQs"/>
+                            <constraint firstItem="gm4-eh-PVa" firstAttribute="bottom" secondItem="8dC-oW-5jQ" secondAttribute="bottom" constant="20" id="xMi-6g-A5R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gm4-eh-PVa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhZ-zN-Yxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="-112"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="122"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="memories" catalog="system" width="128" height="107"/>
+        <image name="xmark.rectangle" catalog="system" width="128" height="93"/>
+        <image name="yagom_symbol" width="167" height="160.5"/>
     </resources>
 </document>

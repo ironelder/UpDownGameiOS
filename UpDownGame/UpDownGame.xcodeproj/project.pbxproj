@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99321123250759E2004C21EA /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99321122250759E2004C21EA /* CreditViewController.swift */; };
 		99BEB1C324F79E5900F47CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEB1C224F79E5900F47CB8 /* AppDelegate.swift */; };
 		99BEB1C524F79E5900F47CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEB1C424F79E5900F47CB8 /* SceneDelegate.swift */; };
 		99BEB1C724F79E5900F47CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEB1C624F79E5900F47CB8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99321122250759E2004C21EA /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		99BEB1BF24F79E5900F47CB8 /* UpDownGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpDownGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BEB1C224F79E5900F47CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99BEB1C424F79E5900F47CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				99BEB1CB24F79E5C00F47CB8 /* Assets.xcassets */,
 				99BEB1CD24F79E5C00F47CB8 /* LaunchScreen.storyboard */,
 				99BEB1D024F79E5C00F47CB8 /* Info.plist */,
+				99321122250759E2004C21EA /* CreditViewController.swift */,
 			);
 			path = UpDownGame;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				99BEB1C724F79E5900F47CB8 /* ViewController.swift in Sources */,
 				99BEB1C324F79E5900F47CB8 /* AppDelegate.swift in Sources */,
 				99BEB1C524F79E5900F47CB8 /* SceneDelegate.swift in Sources */,
+				99321123250759E2004C21EA /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
